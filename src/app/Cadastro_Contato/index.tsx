@@ -5,12 +5,13 @@ import { Text, View, ScrollView, StyleSheet, TouchableOpacity, TextInput, TextIn
 import { router } from 'expo-router'; 
 import Botao from '../../components/Botao'; 
 
-// --- COMPONENTE ENTRADA DE TEXTO INTEGRADO ---
+
 type InputProps = TextInputProps & {
     placeholder?: string;
     placeholderTextColor?: string;
     value?: string;
 }
+
 
 function EntradaTextoLocal({ style, ...rest }: InputProps) {
     return (
@@ -21,7 +22,7 @@ function EntradaTextoLocal({ style, ...rest }: InputProps) {
     )
 }
 
-// --- TELA PRINCIPAL ---
+
 export default function Cadastro_Contato() { 
   const [nome, setNome] = useState(''); 
   const [telefone, setTelefone] = useState(''); 
@@ -91,7 +92,7 @@ export default function Cadastro_Contato() {
           style={styles.botaoSalvar} 
         /> 
 
-        {/* MENSAGEM EXIBIDA NA TELA APÓS CLICAR EM SALVAR */}
+  
         {mensagem !== '' && (
           <View style={styles.containerMensagem}>
             <Text style={styles.mensagemBoasVindas}>
@@ -112,6 +113,20 @@ export default function Cadastro_Contato() {
           Valor atual: {count} 
         </Text> 
 
+        <Botao
+          titulo="IR PARA VETERINÁRIA"
+          cor="#3F2FBF"
+          onPress={() => router.push('/tela_veterinaria')}
+          style={styles.botaoVeterinaria}
+        />
+
+        <Botao
+          titulo="IR PARA SEGURO VEÍCULO"
+          cor="#3F2FBF"
+          onPress={() => router.push('/seguro_veicula')}
+          style={styles.botaoSeguro}
+        />
+
         <Botao 
           titulo="CANCELAR" 
           cor="#ffffff" 
@@ -124,7 +139,7 @@ export default function Cadastro_Contato() {
   ); 
 } 
 
-// --- ESTILOS ---
+
 const styles = StyleSheet.create({ 
   container: { 
     flex: 1, 
@@ -180,6 +195,16 @@ const styles = StyleSheet.create({
     borderRadius: 8, 
     height: 52, 
   }, 
+  botaoVeterinaria: {
+    marginTop: 16,
+    borderRadius: 8,
+    height: 52,
+  },
+  botaoSeguro: {
+    marginTop: 16,
+    borderRadius: 8,
+    height: 52,
+  },
   botaoCancelar: { 
     marginTop: 16, 
     borderRadius: 8, 

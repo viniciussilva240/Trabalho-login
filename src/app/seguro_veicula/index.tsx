@@ -36,13 +36,13 @@ export default function SeguroVeicula() {
       <StatusBar style="light" />
 
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>□  Seguro veicular</Text>
+        <Text style={styles.headerTitle}>  Seguro veicular</Text>
         <Text style={styles.headerSubtitle}>Calculadora do valor do seguro</Text>
       </View>
 
       <ScrollView contentContainerStyle={styles.scroll}>
         <View style={styles.card}>
-          <Text style={styles.cardTitle}>□  Dados do veículo</Text>
+          <Text style={styles.cardTitle}> Dados do veículo</Text>
 
           <Text style={styles.label}>Ano do veículo</Text>
           <TextInput
@@ -93,7 +93,7 @@ export default function SeguroVeicula() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#1a1a2e',
+    backgroundColor: '#ffffffff',
   },
   header: {
     backgroundColor: '#1a1a2e',
@@ -115,7 +115,7 @@ const styles = StyleSheet.create({
     paddingBottom: 40,
   },
   card: {
-    backgroundColor: '#222244',
+    backgroundColor: '#6f6f72ff',
     borderRadius: 12,
     padding: 20,
   },
@@ -177,7 +177,7 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
   resultValueOrange: {
-    color: '#ffaa00',
+    color: '#00ccffff',
     fontSize: 20,
     fontWeight: 'bold',
     textAlign: 'right',

@@ -44,7 +44,7 @@ export default function TelaVeterinaria() {
 
         {/* Seção Ração */}
         <View style={styles.card}>
-          <Text style={styles.cardTitle}>□  Cálculo de ração</Text>
+          <Text style={styles.cardTitle}>  Cálculo de ração</Text>
 
           <Text style={styles.label}>Peso do animal (kg)</Text>
           <TextInput
@@ -70,7 +70,7 @@ export default function TelaVeterinaria() {
 
         {/* Seção Vacina */}
         <View style={styles.card}>
-          <Text style={styles.cardTitle}>□  Dose de vacina</Text>
+          <Text style={styles.cardTitle}>  Dose de vacina</Text>
 
           <Text style={styles.label}>Peso do animal (kg)</Text>
           <TextInput

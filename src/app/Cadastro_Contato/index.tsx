@@ -129,6 +129,8 @@ export default function Cadastro_Contato() {
           </View>
         )}
 
+  
+
         <TouchableOpacity onPress={() => router.push('/Cadastro_Cliente')}>
           <Text style={styles.link}>fazer cadastro</Text>
         </TouchableOpacity>
@@ -140,6 +142,20 @@ export default function Cadastro_Contato() {
         <Text style={{ textAlign: 'center', fontSize: 18, marginVertical: 10, color: '#333' }}>
           Valor atual: {count}
         </Text>
+
+        <Botao
+          titulo="IR PARA MAP"
+          cor="#3F2FBF"
+          onPress={() => router.push('/tela_map')}
+          style={styles.botaoMap}
+        />
+
+        <Botao
+          titulo="IR PARA FLATLIST"
+          cor="#6c757d"
+          onPress={() => router.push('/flatlist')}
+          style={styles.botaoFlatlist}
+        />
 
         <Botao
           titulo="IR PARA VETERINÁRIA"
@@ -260,6 +276,16 @@ const styles = StyleSheet.create({
   contatoTelefone: {
     fontSize: 14,
     color: '#666',
+  },
+  botaoMap: {
+    marginTop: 16,
+    borderRadius: 8,
+    height: 52,
+  },
+  botaoFlatlist: {
+    marginTop: 16,
+    borderRadius: 8,
+    height: 52,
   },
   botaoVeterinaria: {
     marginTop: 16,

@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@expo/metro-runtime": "^57.0.8",
+    "@expo/vector-icons": "^15.1.1",
     "expo": "~54.0.35",
     "expo-constants": "~18.0.13",
     "expo-linking": "~8.0.12",

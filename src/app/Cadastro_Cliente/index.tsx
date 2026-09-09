@@ -116,6 +116,12 @@ export default function Cadastro_Cliente() {
                         style={styles.botao}
                     />
                     <Botao
+                        titulo="IR PARA FLATLIST"
+                        cor="#6c757d"
+                        onPress={() => router.push('/flatlist')}
+                        style={styles.botao}
+                    />
+                    <Botao
                         titulo="CANCELAR"
                         cor="#dc3545"
                         onPress={handleCancelar}

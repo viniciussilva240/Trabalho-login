@@ -62,6 +62,13 @@ export const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: '#8B5CF6',
   },
+  erro: {
+    color: '#F87171',
+    fontSize: 13,
+    textAlign: 'center',
+    marginTop: 8,
+    marginBottom: 4,
+  },
   buttonText: {
     color: '#FFFFFF',
     fontSize: 16,

@@ -13,7 +13,7 @@ import {
 import { StatusBar } from 'expo-status-bar';
 import { MaterialIcons, MaterialCommunityIcons, Ionicons } from '@expo/vector-icons';
 
-// ⚠️ Cadastre-se gratuitamente em https://pixabay.com/api/docs/ e cole sua chave aqui
+
 const PIXABAY_KEY = '57531397-528c80b99a9e7f726fd167794';
 
 type Produto = {

@@ -149,7 +149,12 @@ export default function Cadastro_Contato() {
           onPress={() => router.push('/tela_map')}
           style={styles.botaoMap}
         />
-
+        <Botao
+          titulo= "TESTE DE TELA"
+          cor="#6c757d"
+          onPress={() => router.push('/testedetela')}
+          style={styles.botaoFlatlist}
+        />
         <Botao
           titulo="IR PARA FLATLIST"
           cor="#6c757d"

@@ -144,6 +144,13 @@ export default function Cadastro_Contato() {
         </Text>
 
         <Botao
+          titulo="IR PARA LANCHONETE"
+          cor="#1976D2"
+          onPress={() => router.push('/lanchonete')}
+          style={styles.botaoMap}
+        />
+
+        <Botao
           titulo="IR PARA MAP"
           cor="#3F2FBF"
           onPress={() => router.push('/tela_map')}

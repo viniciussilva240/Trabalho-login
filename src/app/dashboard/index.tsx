@@ -16,19 +16,27 @@ type CardBimestre = {
 const bimestres: CardBimestre[] = [
   {
     titulo: '3º Bimestre',
-    descricao: 'Cadastro de Contato',
+    descricao: 'Todas As atividades do 3 Bimestre',
     rota: '/Cadastro_Contato',
     icone: 'contacts',
     cor: '#3F2FBF',
     corFundo: '#ede9fe',
   },
   {
-    titulo: '4º Bimestre',
+    titulo: 'Adega Prferida',
     descricao: 'Adega Preferida',
     rota: '/adega',
     icone: 'wine-bar',
     cor: '#6B0000',
     corFundo: '#fdf2f2',
+  },
+  {
+    titulo: 'Lanchonete',
+    descricao: 'Lanchonete do IFRO',
+    rota: '/lanchonete',
+    icone: 'fastfood',
+    cor: '#1976D2',
+    corFundo: '#e3f2fd',
   },
 ];
 

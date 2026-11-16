@@ -38,6 +38,22 @@ const bimestres: CardBimestre[] = [
     cor: '#1976D2',
     corFundo: '#e3f2fd',
   },
+  {
+    titulo: 'Lanchonete Drawer',
+    descricao: 'Lanchonete do IFRO com Drawer',
+    rota: '/lanchonete_drawer',
+    icone: 'menu',
+    cor: '#00796B',
+    corFundo: '#e0f2f1',
+  },
+  {
+    titulo: 'API',
+    descricao: 'Atividades com API',
+    rota: '/tela_api',
+    icone: 'api',
+    cor: '#0d7c3d',
+    corFundo: '#e8f5e9',
+  },
 ];
 
 export default function Dashboard() {
